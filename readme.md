@@ -2104,9 +2104,9 @@ export default PureComponent;
 
 - Redux objects are made immutable for the following reasons:
 
-- Predictability: By making redux objects immutable, the state of the application becomes predictable. When an action is dispatched to the store, the state is updated by returning a new object with the updated properties, rather than mutating the existing object. This means that the state of the application can be tracked and easily tracked back to the source of the changes.
+- Predictability: With immutable objects, you avoid unexpected side effects that can occur when mutating data directly. In Redux, reducers are supposed to be pure functions, meaning they should not mutate the state directly but rather return a new state object. This makes it easier to reason about how data changes over time, leading to more predictable behavior in your application.
 
-- Performance: By using immutable objects, the performance of the application can be improved, particularly when working with large data sets. Because immutable objects can be shared between different parts of the application without worrying about them being mutated, unnecessary copies of data can be avoided, leading to faster perfromance.
+- Performance: When you use immutable objects, Redux can easily detect changes by comparing references. If an object's reference hasn't changed, Redux knows that the data within it hasn't changed either, so it doesn't need to trigger unnecessary re-renders or updates. This helps in optimizing performance, especially in large-scale applications where state changes frequently.
 
 - Debugging: Debugging can be easire with immutable objects because they allow you to easily trace the state of the application back to the source of the changes.
 
