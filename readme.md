@@ -203,7 +203,31 @@ SCSS is not understood by the browser. It must be transpiled into CSS code that 
 
 ---
 
-13. **Create a triangle in CSS**
+13. **Here's a breakdown of when to use pixels (px), rems (rem), and ems (em) in CSS:**
+
+- `Pixels (px):`
+•	Use px for fixed sizes that shouldn't scale with the font size or user preferences. This includes: 
+o	Border widths (1px border)
+o	Image sizes (100px wide image)
+o	Specific layout dimensions (300px x 200px box)
+
+- `Rems (rem):`
+•	Use rem for most of your styling, especially font sizes, margins, and padding. Rems are relative to the root element's font size (usually the <html> element). This allows for easier scaling of the entire design if needed.
+•	Benefits of using rem: 
+ 	 Improves maintainability: Change the base font size and all rem values adjust accordingly.
+ 
+   Responsive design: Users can adjust font size in their browser, and the layout scales proportionally.
+
+- `Ems (em):`
+•	Use em when you want an element's size to be relative to its direct parent element's font size. This can be useful for creating nested elements that scale proportionally to their parent.
+. 	Consider using em for: 
+.	  Margins and padding within a specific section
+.	  Creating a responsive typography scale within a component
+
+
+---
+
+14. **Create a triangle in CSS**
 
 ```css
 div {
@@ -220,7 +244,7 @@ div {
 
 ---
 
-14. **Create a 5 \* 5 chess board using HTML & CSS**
+15. **Create a 5 \* 5 chess board using HTML & CSS**
     <span style="color:yellow">[Thinkify]</span>
 
 ```html
