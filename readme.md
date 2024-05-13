@@ -48,6 +48,41 @@
 
 - `Mixin`: SCSS allows you to define reusable blocks of CSS code called mixins, which can be included in other parts of your code.
 
+- Syntax: ********
+
+CSS: Uses a simple syntax with curly braces {} and semicolons ;.
+SCSS: A superset of CSS, meaning it extends CSS syntax by adding features like variables, nesting, and mixins. SCSS syntax resembles that of programming languages with the use of variables (prefixed with $), nesting, and mixins.
+Variables:
+
+CSS: Does not support variables.
+SCSS: Supports variables, allowing you to define reusable values.
+Nesting:
+
+CSS: Does not support nesting of selectors.
+SCSS: Allows nesting of selectors, which can help organize styles hierarchically.
+Mixins:
+
+CSS: Does not support mixins.
+SCSS: Supports mixins, which are reusable blocks of styles that can be included in other style rules.
+Partials and Importing:
+
+CSS: Doesn't have a concept of partials or importing.
+SCSS: Allows you to break your styles into separate files called partials and import them into other SCSS files.
+Comments:
+
+CSS: Supports only block comments (/* */).
+SCSS: Supports both block comments and inline comments (//).
+Mathematical Operations:
+
+CSS: Does not support mathematical operations.
+SCSS: Allows you to perform mathematical operations within style rules.
+File Extension:
+
+CSS: Files typically have a .css extension.
+SCSS: Files typically have a .scss extension.
+In summary, SCSS is an extension of CSS that provides additional features to make styling more efficient and maintainable. It adds features like variables, nesting, mixins, and more, which can significantly improve the workflow of styling complex web applications. However, SCSS files need to be compiled into standard CSS before being used in a web project.
+- **************
+
 SCSS is not understood by the browser. It must be transpiled into CSS code that the browser can understand. This is typically done using a tool like `Webpack` or `Gulp`. Advantages of PostCSS over SCSS are listed below:
 
 - PostCSS is a tool that processes CSS code and applies transformations to it. unlike SCSS, which is a preprocessor that extends CSS with additional features, PostCSS operates on standard CSS syntax and can be used to automate tasks like adding vendor prefixes, optimizing code, and generating fallbacks for older browsers.
