@@ -1978,9 +1978,9 @@ function foo() {
 console.log(foo());
 
 // Output
-Error
+a
 finally
-0
+3
 ```
 
 ---
